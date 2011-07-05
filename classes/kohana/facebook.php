@@ -24,8 +24,8 @@ class Kohana_Facebook
 		// Do class setup
 		$this->_facebook = new Facebook(
 			array(
-				'appId'  => Kohana::config('facebook')->app_id,
-				'secret' => Kohana::config('facebook')->secret,
+				'appId'  => Kohana::$config->load('facebook')->app_id,
+				'secret' => Kohana::$config->load('facebook')->secret,
 				'cookie' => true, // enable optional cookie support
 			)
 		);

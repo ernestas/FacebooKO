@@ -9,11 +9,13 @@ class FacebooKO_Base extends Facebook
      */
     public static function factory()
     {
+		$facebook = Kohana::$config->load('facebook');
+
         return new FacebooKO(
             array(
-                'appId'  => Kohana::$config->load('facebook')->app_id,
-                'secret' => Kohana::$config->load('facebook')->secret,
-                'cookie' => Kohana::$config->load('facebook')->cookie,
+                'appId'  => $facebook->app_id,
+                'secret' => $facebook->secret,
+                'cookie' => $facebook->cookie,
             )
         );
     }

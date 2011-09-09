@@ -13,7 +13,7 @@ class FacebooKO_Base extends Facebook
             array(
                 'appId'  => Kohana::$config->load('facebook')->app_id,
                 'secret' => Kohana::$config->load('facebook')->secret,
-                'cookie' => true, // enable optional cookie support
+                'cookie' => Kohana::$config->load('facebook')->cookie,
             )
         );
     }

@@ -15,7 +15,6 @@ class FacebooKO_Base extends Facebook
             array(
                 'appId'  => $facebook->app_id,
                 'secret' => $facebook->secret,
-                'cookie' => $facebook->cookie,
             )
         );
     }

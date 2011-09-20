@@ -13,8 +13,9 @@ class FacebooKO_Base extends Facebook
 
         return new FacebooKO(
             array(
-                'appId'  => $facebook->app_id,
-                'secret' => $facebook->secret,
+                'appId'      => $facebook->app_id,
+                'secret'     => $facebook->secret,
+                'fileUpload' => $facebook->file_upload,
             )
         );
     }

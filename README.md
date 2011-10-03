@@ -1,7 +1,7 @@
 FacebooKO
 ===
 
-[Facebook PHP SDK](github.com/facebook/php-sdk) class wrapper for Kohana.
+[Facebook PHP SDK](http://github.com/facebook/php-sdk) class wrapper for Kohana.
 
 Usage
 ---

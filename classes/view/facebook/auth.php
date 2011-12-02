@@ -9,7 +9,7 @@ class View_Facebook_Auth extends KOstache
 				'canvas' => 1,
 				'fbconnect' => 0,
 				'scope' => 'email',
-				'redirect_uri' => Kohana::$config->load('facebook')->redirect_uri,
+				'redirect_uri' => Kohana::$config->load('facebook.redirect_uri'),
 			)
 		);
 	}
